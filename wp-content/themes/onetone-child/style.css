@@ -1,0 +1,12 @@
+/*
+Theme Name: OneTone Child
+Description: Child theme for OneTone theme
+Author: Thomas Lepage, Alexandre Bélair-Rouillard, etc...
+Template: OneTone
+*/
+
+/* write custom css */
+
+.promo-info h4 {
+    color: red;
+}
