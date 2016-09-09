@@ -10,3 +10,11 @@ Template: OneTone
 .promo-info h4 {
     color: red;
 }
+
+#order_data h2 {
+    color: red;
+}
+
+.checkbox input[type=checkbox] {
+    position: static;
+}
