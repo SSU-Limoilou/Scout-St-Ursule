@@ -19,12 +19,12 @@ CREATE TABLE `wp_revisr` (
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2016-09-09 15:26:59','Checked out branch: developpement.','branch','Admin'),(2,'2016-09-09 15:27:39','Pulled <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=137776f\">#137776f</a> from origin/developpement.','pull','Admin');
+INSERT INTO `wp_revisr` VALUES (1,'2016-09-09 15:05:36','Checked out branch: developpement.','branch','Admin'),(2,'2016-09-09 15:06:36','Checked out branch: master.','branch','Admin'),(3,'2016-09-09 15:07:45','Checked out branch: developpement.','branch','Admin'),(4,'2016-09-09 15:18:05','Error backing up the database.','error','Admin'),(5,'2016-09-09 15:18:08','There was an error committing the changes to the local repository.','error','Admin'),(6,'2016-09-09 15:22:27','Error backing up the database.','error','Admin'),(7,'2016-09-09 15:22:28','Committed <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=137776f&success=true\">#137776f</a> to the local repository.','commit','Admin'),(8,'2016-09-09 15:22:45','Successfully pushed 1 commit to origin/developpement.','push','Admin'),(9,'2016-09-09 15:32:43','Error backing up the database.','error','Admin'),(10,'2016-09-09 15:33:47','Error backing up the database.','error','Admin');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
