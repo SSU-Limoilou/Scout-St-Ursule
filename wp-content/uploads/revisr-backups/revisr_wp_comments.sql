@@ -39,7 +39,7 @@ CREATE TABLE `wp_comments` (
 
 LOCK TABLES `wp_comments` WRITE;
 /*!40000 ALTER TABLE `wp_comments` DISABLE KEYS */;
-INSERT INTO `wp_comments` VALUES (1,1,'Monsieur WordPress','','https://wordpress.org/','','2016-09-08 15:59:15','2016-09-08 13:59:15','Bonjour, ceci est un commentaire.\nPour supprimer un commentaire, connectez-vous et affichez les commentaires de cet article. Vous pourrez alors les modifier ou les supprimer.',0,'1','','',0,0);
+INSERT INTO `wp_comments` VALUES (1,1,'Monsieur WordPress','','https://wordpress.org/','','2016-09-08 15:59:15','2016-09-08 13:59:15','Bonjour, ceci est un commentaire.\nPour supprimer un commentaire, connectez-vous et affichez les commentaires de cet article. Vous pourrez alors les modifier ou les supprimer.',0,'post-trashed','','',0,0);
 /*!40000 ALTER TABLE `wp_comments` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

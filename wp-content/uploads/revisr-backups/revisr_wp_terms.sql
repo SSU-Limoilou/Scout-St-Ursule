@@ -20,12 +20,12 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_terms` WRITE;
 /*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */;
-INSERT INTO `wp_terms` VALUES (1,'Non classé','non-classe',0),(2,'simple','simple',0),(4,'grouped','grouped',0),(5,'variable','variable',0),(8,'external','external',0);
+INSERT INTO `wp_terms` VALUES (1,'Non classé','non-classe',0),(2,'simple','simple',0),(4,'grouped','grouped',0),(5,'variable','variable',0),(8,'external','external',0),(9,'question','question',0),(10,'FAQ','faq',0);
 /*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
