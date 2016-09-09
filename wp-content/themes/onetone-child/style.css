@@ -19,3 +19,11 @@ Template: OneTone
 .promo-action {
 	display: none;
 }
+
+.home-section-content h2 {
+	margin: 20px 0 25px 0;	
+}
+
+span .fa-laptop:before {
+	display:none;
+}
