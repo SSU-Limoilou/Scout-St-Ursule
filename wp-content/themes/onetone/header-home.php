@@ -136,8 +136,10 @@
 							 $section_slug = onetone_option( 'menu_slug_'.$i,isset($default_options['menu_slug_'.$i])?$default_options['menu_slug_'.$i]:'' );
 							  if( $section_slug )
 							  $section_slug =  sanitize_title($section_slug );
+							  
+							   $hide_section  = onetone_option( 'section_hide_'.$i );
 							
-							 if(isset($section_menu) && $section_menu !=""){
+							 if( isset($section_menu) && $section_menu !="" &&  $hide_section != '1' ){
 							 $sanitize_title = 'section-'.($i+1);
 							 
 							 $section_menu = onetone_option( 'menu_title_'.$i,isset($default_options['menu_title_'.$i])?$default_options['menu_title_'.$i]:'' );
