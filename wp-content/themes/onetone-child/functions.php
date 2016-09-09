@@ -284,6 +284,33 @@ function addOtherContactInfoFields( $checkout ) {
         ), $checkout->get_value( 'otherContact_email' ));
     echo '</div></div></div><div><div><div>';
 }
+
+add_action( 'woocommerce_after_order_notes', 'addConsentment' );
+
+function addConsentment( $checkout ) {
+
+    echo '<h2>' . __('Consentement') . '</h2>';
+    echo "<p>J’autorise la Société scoute de Ste-Ursule, Les Scouts du Canada et le district de Québec à photographier ou faire des enregistrements de mes enfants et à les publier sur leur site internet, Facebook ou autres publications ou médias.</p>";
+
+    woocommerce_form_field( 'consentement_accept', array(
+        'type'          => 'radio',
+        'class'         => array('my-field-class form-row-first'),
+        'label'         => __(''),
+        'placeholder'   => __('Oui'),
+        'options'       => array(
+        'Oui'   => 'Oui',
+        'Non'   => 'Non')
+        ), $checkout->get_value( 'consentement_accept' )); 
+    echo '<h2>' . __('Autres informations') . '</h2>';
+    echo "<p>Veuillez spécifier toutes autres informations importante. Ex. Allergie, besoins spécifique, etc.</p>";
+    woocommerce_form_field( 'otherInfo', array(
+        'type'          => 'textarea',
+        'class'         => array('my-field-class form-row-first'),
+        'label'         => __(''),
+        'placeholder'   => __('Autres informations...')
+        ), $checkout->get_value( 'otherInfo' )); 
+    echo '</div></div></div><div><div><div>';
+}
 /**
  * Update the order meta with field value
  */
@@ -404,7 +431,15 @@ function my_custom_checkout_field_update_order_meta( $order_id ) {
     } 
     if ( ! empty( $_POST['otherContact_email'] ) ) {
         update_post_meta( $order_id, 'otherContact_email', sanitize_text_field( $_POST['otherContact_email'] ) );
+    } 
+    
+    if ( ! empty( $_POST['consentement_accept'] ) ) {
+        update_post_meta( $order_id, 'consentement_accept', sanitize_text_field( $_POST['consentement_accept'] ) );
     }
+    
+    if ( ! empty( $_POST['otherInfo'] ) ) {
+        update_post_meta( $order_id, 'consentement_accept', sanitize_text_field( $_POST['otherInfo'] ) );
+    } 
 }
 
 /**
@@ -444,10 +479,10 @@ function my_custom_checkout_field_display_admin_order_meta($order){
     $temp .= '<p><strong>Téléphone: </strong>' . get_post_meta( $order->id, 'parentTwo_phone', true ) . '</p>';
     $temp .= '<p><strong>Autre téléphone: </strong>' . get_post_meta( $order->id, 'parentTwo_phoneOther', true ) . '</p>';
     $temp .= '<p><strong>Courriel: </strong>' . get_post_meta( $order->id, 'parentTwo_email', true ) . '</p>';
-    $temp .= '</div>'; 
+    $temp .= '</div></div>'; 
     
     //Show Other contact info
-    $temp .= '</div><div class="order_data_column_container"><div class="order_data_column"><h3>Autre contact</h3>';
+    $temp .= '<div class="order_data_column_container"><div class="order_data_column"><h3>Autre contact</h3>';
     $temp .= '<p><strong>'.__('Prénom').':</strong> ' . get_post_meta( $order->id, 'otherContact_firstName', true ) . ' &nbsp; <strong>'.__('Nom').':</strong> ' . get_post_meta( $order->id, 'otherContact_lastName', true ) . '</p>';
     $temp .= '<p><strong>Adresse: </strong> <br>' 
         . get_post_meta( $order->id, 'otherContact_address', true ) 
@@ -455,6 +490,17 @@ function my_custom_checkout_field_display_admin_order_meta($order){
     $temp .= '<p><strong>Téléphone: </strong>' . get_post_meta( $order->id, 'otherContact_phone', true ) . '</p>';
     $temp .= '<p><strong>Autre téléphone: </strong>' . get_post_meta( $order->id, 'otherContact_phoneOther', true ) . '</p>';
     $temp .= '<p><strong>Courriel: </strong>' . get_post_meta( $order->id, 'otherContact_email', true ) . '</p>';
+    $temp .= '</div>';
+
+    //Show Children consentement
+    $temp .='<div class="order_data_column"><h3>Autres Informations</h3>';
+    $temp .= '<p><strong>'.__('Informations importantes').':</strong> ' . get_post_meta( $order->id, 'otherInfo', true ) . '</p>';
+    $temp .= '</div>';
+    
+    //Show Children consentement
+    $temp .='<div class="order_data_column"><h3>Consentement</h3>';
+    $temp .= '<p><strong>'.__('Autorisation Photo/Vidéo').':</strong> ' . get_post_meta( $order->id, 'consentement_accept', true ) . '</p>';
+   
     $temp .= '<div></div>';
     echo $temp;
 }

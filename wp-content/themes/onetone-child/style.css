@@ -22,3 +22,11 @@ Template: OneTone
 .woocommerce-checkout .checkout .col-1 .form-row-first {
     clear: left;
 }
+
+label[for*=consentement_accept] {
+    display: inline !important;
+}
+
+input[name=consentement_accept] {
+    margin: 0 10px;
+}
