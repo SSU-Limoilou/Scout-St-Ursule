@@ -18,3 +18,7 @@ Template: OneTone
 .checkbox input[type=checkbox] {
     position: static;
 }
+
+.woocommerce-checkout .checkout .col-1 .form-row-first {
+    clear: left;
+}

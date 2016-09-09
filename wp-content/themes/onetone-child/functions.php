@@ -19,7 +19,7 @@ function custom_override_checkout_fields( $fields ) {
 add_action( 'woocommerce_after_order_notes', 'addChildrenInfoFields' );
 function addChildrenInfoFields( $checkout ) {
 
-    echo '</div></div></div><div class="col2-set"><div class="col-1"><div id="my_custom_checkout_field"><h2>' . __('Enfant') . '</h2>';
+    echo '</div></div></div><div class="col2-set"><div class="col-1"><div id="childrenInfo"><h2>' . __('Enfant') . '</h2>';
 
     woocommerce_form_field( 'child_firstName', array(
         'type'          => 'text',
@@ -82,7 +82,7 @@ add_action( 'woocommerce_after_order_notes', 'addParentOneInfoFields' );
 
 function addParentOneInfoFields( $checkout ) {
 
-    echo '<div class="col-2"><div id="my_custom_checkout_field"><h2>' . __('Parent 1 ou Tuteur') . '</h2>';
+    echo '<div class="col-2"><div id="parentOneInfo"><h2>' . __('Parent 1 ou Tuteur') . '</h2>';
 
     woocommerce_form_field( 'parentOne_firstName', array(
         'type'          => 'text',
@@ -151,7 +151,7 @@ add_action( 'woocommerce_after_order_notes', 'addParentTwoInfoFields' );
 
 function addParentTwoInfoFields( $checkout ) {
 
-    echo '<div class="col2-set"><div class="col-1"><div id="my_custom_checkout_field"><h2>' . __('Parent 2') . '</h2>';
+    echo '<div class="col2-set"><div class="col-1"><div id="parentTwoInfo"><h2>' . __('Parent 2') . '</h2>';
 
     woocommerce_form_field( 'parentTwo_firstName', array(
         'type'          => 'text',
@@ -177,13 +177,13 @@ function addParentTwoInfoFields( $checkout ) {
         'label'         => __('Adresse'),
         'placeholder'   => __('Adresse'),
         ), $checkout->get_value( 'parentTwo_address' ));
-    woocommerce_form_field( 'parentOne_city', array(
+    woocommerce_form_field( 'parentTwo_city', array(
         'type'          => 'text',
         'class'         => array('my-field-class form-row-wide'),
         'label'         => __('Ville'),
         'placeholder'   => __('Ville'),
         ), $checkout->get_value( 'parentTwo_city' ));
-    woocommerce_form_field( 'parentOne_state', array(
+    woocommerce_form_field( 'parentTwo_state', array(
         'type'          => 'state',
         'class'         => array('my-field-class form-row-first'),
         'label'         => __('Province'),
@@ -220,14 +220,14 @@ add_action( 'woocommerce_after_order_notes', 'addOtherContactInfoFields' );
 
 function addOtherContactInfoFields( $checkout ) {
 
-    echo '<div class="col-2"><div id="my_custom_checkout_field"><h2>' . __('Autre Contact') . '</h2>';
+    echo '<div class="col-2"><div id="otherContactInfo"><h2>' . __('Autre Contact') . '</h2>';
 
     woocommerce_form_field( 'otherContact_firstName', array(
         'type'          => 'text',
         'class'         => array('my-field-class form-row-first'),
         'label'         => __('Prénom'),
         'placeholder'   => __('Prénom'),
-        ), $checkout->get_value( 'parentTwo_firstName' ));
+        ), $checkout->get_value( 'otherContact_firstName' ));
     woocommerce_form_field( 'otherContact_lastName', array(
         'type'          => 'text',
         'class'         => array('my-field-class form-row-last'),
@@ -282,7 +282,7 @@ function addOtherContactInfoFields( $checkout ) {
         'label'         => __('Courriel'),
         'placeholder'   => __('Courriel')
         ), $checkout->get_value( 'otherContact_email' ));
-    echo '</div></div></div>';
+    echo '</div></div></div><div><div><div>';
 }
 /**
  * Update the order meta with field value
