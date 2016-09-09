@@ -7,6 +7,15 @@ Template: OneTone
 
 /* write custom css */
 
+.promo-info {
+	padding: 0;
+}
+
 .promo-info h4 {
-    color: blue;
+	padding: 0;
+	text-align: center;
+}
+
+.promo-action {
+	display: none;
 }

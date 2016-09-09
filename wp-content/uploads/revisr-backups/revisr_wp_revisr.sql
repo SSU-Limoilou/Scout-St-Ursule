@@ -19,12 +19,12 @@ CREATE TABLE `wp_revisr` (
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2016-09-09 15:26:59','Checked out branch: developpement.','branch','Admin'),(2,'2016-09-09 15:27:39','Pulled <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=137776f\">#137776f</a> from origin/developpement.','pull','Admin'),(3,'2016-09-09 15:38:00','Successfully backed up the database.','backup','Admin'),(4,'2016-09-09 15:38:03','Pulled <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=166e089\">#166e089</a> from origin/developpement.','pull','Admin'),(5,'2016-09-09 15:41:30','Error pushing changes to the remote repository.','error','Admin'),(6,'2016-09-09 15:42:16','Error pushing changes to the remote repository.','error','Admin'),(7,'2016-09-09 15:44:14','Created new branch: faq_scout','branch','Admin'),(8,'2016-09-09 15:44:15','Checked out branch: faq_scout.','branch','Admin');
+INSERT INTO `wp_revisr` VALUES (1,'2016-09-09 15:26:59','Checked out branch: developpement.','branch','Admin'),(2,'2016-09-09 15:27:39','Pulled <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=137776f\">#137776f</a> from origin/developpement.','pull','Admin'),(3,'2016-09-09 15:38:00','Successfully backed up the database.','backup','Admin'),(4,'2016-09-09 15:38:03','Pulled <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=166e089\">#166e089</a> from origin/developpement.','pull','Admin'),(5,'2016-09-09 15:41:30','Error pushing changes to the remote repository.','error','Admin'),(6,'2016-09-09 15:42:16','Error pushing changes to the remote repository.','error','Admin'),(7,'2016-09-09 15:44:14','Created new branch: faq_scout','branch','Admin'),(8,'2016-09-09 15:44:15','Checked out branch: faq_scout.','branch','Admin'),(9,'2016-09-09 15:48:04','Successfully backed up the database.','backup','Admin'),(10,'2016-09-09 15:48:05','Committed <a href=\"http://localhost/wp-scout/wp-admin/admin.php?page=revisr_view_commit&commit=b105206&success=true\">#b105206</a> to the local repository.','commit','Admin'),(11,'2016-09-09 15:48:51','Successfully pushed 3 commits to origin/faq_scout.','push','Admin');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
