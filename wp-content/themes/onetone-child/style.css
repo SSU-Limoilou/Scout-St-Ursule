@@ -30,3 +30,7 @@ label[for*=consentement_accept] {
 input[name=consentement_accept] {
     margin: 0 10px;
 }
+
+#customer_details {
+    /*display: none !important;*/
+}
