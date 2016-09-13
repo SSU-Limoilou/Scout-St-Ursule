@@ -34,3 +34,66 @@ input[name=consentement_accept] {
 #customer_details {
     /*display: none !important;*/
 }
+
+.registerImageScout, .registerImageBenevole {
+    -webkit-opacity: 0.75;
+    -moz-opacity: 0.75;
+    opacity: 0.75;
+    margin-top: 333px;
+}
+
+.registerImageScout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.registerImageBenevole {
+    float: right;
+}
+
+.registerButton:link, .registerButton:visited {
+    width: 305px;
+    height: 80px;
+    font-size: 40pt;
+    border: 5pt solid #685d54;
+    color: #685d54;
+    margin-left: 400px;
+    margin-bottom: 100px;
+    
+}
+
+.registerButton:hover, .registerButton:active {
+    border: 5pt solid #958579;
+    color: #958579;
+}
+
+#inscription, #inscription2 {
+    height: 833px;
+}
+
+#scouts {
+    background-color: white;
+    position: relative;
+}
+
+#benevoles {
+    background-color:  #e3e3e3;
+}
+
+#scouts h1, #benevoles h1 {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#scouts h1 {
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-left: 400px;
+}
+
+#scouts p {
+    margin-bottom: 350px;
+    margin-left: 400px;
+}
+
