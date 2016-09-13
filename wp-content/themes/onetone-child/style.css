@@ -5,25 +5,88 @@ Author: Thomas Lepage, Alexandre Bélair-Rouillard, etc...
 Template: OneTone
 */
 
+
 /* write custom css */
 
+@font-face {
+    font-family: 'zemboodregular';
+    src: url(font/zembood/zembood_shiro_5-webfont.woff2) format('woff2'), url(font/zembood/zembood_shiro_5-webfont.woff) format('woff'), url(font/zembood/zembood_shiro_5-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(font/roboto/roboto-black-webfont.woff2) format('woff2'), url(font/roboto/roboto-black-webfont.woff) format('woff'), url(font/roboto/roboto-black-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(font/roboto/roboto-bold-webfont.woff2) format('woff2'), url(font/roboto/roboto-bold-webfont.woff) format('woff'), url(font/roboto/roboto-bold-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(font/roboto/roboto-light-webfont.woff2) format('woff2'), url(font/roboto/roboto-light-webfont.woff) format('woff'), url(font/roboto/roboto-light-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(font/roboto/roboto-medium-webfont.woff2) format('woff2'), url(font/roboto/roboto-medium-webfont.woff) format('woff'), url(font/roboto/roboto-medium-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(font/roboto/roboto-regular-webfont.woff2) format('woff2'), url(font/roboto/roboto-regular-webfont.woff) format('woff'), url(font/roboto/roboto-regular-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .promo-info {
-	padding: 0;
+    padding: 0;
 }
 
 .promo-info h4 {
-	padding: 0;
-	text-align: center;
+    padding: 0;
+    font-family: 'robotoregular' !important;
+    font-size: 18pt !important;
+    color: white !important;
+    text-align: center;
 }
 
 .promo-action {
-	display: none;
+    display: none;
 }
 
 .home-section-content h2 {
-	margin: 20px 0 25px 0;	
+    margin: 20px 0 25px 0;
 }
 
 span .fa-laptop:before {
-	display:none;
+    display: none;
+}
+
+.banner-sns {
+    display: none !important;
+}
+
+.magee-heading .heading-inner {
+    margin-top: 450px !important;
+    font-family: 'zemboodregular' !important;
+    font-size: 126pt !important;
+    border-style: none;
+}
+
+.home-section-content {
+    margin-top: -120px !important;
+    font-family: 'zemboodregular' !important;
+    font-size: 95pt !important;
 }
