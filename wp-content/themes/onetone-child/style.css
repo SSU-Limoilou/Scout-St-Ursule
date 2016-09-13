@@ -10,3 +10,27 @@ Template: OneTone
 .promo-info h4 {
     color: red;
 }
+
+#order_data h2 {
+    color: red;
+}
+
+.checkbox input[type=checkbox] {
+    position: static;
+}
+
+.woocommerce-checkout .checkout .col-1 .form-row-first {
+    clear: left;
+}
+
+label[for*=consentement_accept] {
+    display: inline !important;
+}
+
+input[name=consentement_accept] {
+    margin: 0 10px;
+}
+
+#customer_details {
+    /*display: none !important;*/
+}
