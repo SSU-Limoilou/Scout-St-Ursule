@@ -49,26 +49,70 @@ Template: OneTone
     font-weight: normal;
     font-style: normal;
 }
+#menu-main {
+    font-family: 'robotolight';
+}
+
+#menu-main a:hover {
+    color: #907240;
+}
+
+.site-nav > ul > li > a {
+    font-size: 15pt !important;
+}
+
+.site-nav > ul > li.current > a {
+    color: #907240 !important;
+}
 
 .promo-info {
-	padding: 0;
+    padding: 0;
 }
 
 .promo-info h4 {
-	padding: 0;
-	text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'robotoregular' !important;
+    font-size: 18pt;
+    color: white;
+    text-align: center;
 }
 
 .promo-action {
-	display: none;
+    display: none;
 }
 
 .home-section-content h2 {
-	margin: 20px 0 25px 0;	
+    margin: 20px 0 25px 0;
 }
 
 span .fa-laptop:before {
-	display:none;
+    display: none;
+}
+
+.banner-sns {
+    display: none !important;
+}
+
+#accueil .section-title {
+    margin-top: 550px;
+    font-family: 'zemboodregular';
+    font-size: 126pt !important;
+    border-style: none;
+}
+
+#accueil .home-section-content p{
+    margin-top: 0 !important;
+    line-height: 0 !important;
+    font-family: 'zemboodregular';
+    font-size: 95pt !important;
+}
+
+#accueil .home-section-content img {
+    margin-top: -775px;
+    padding-bottom: 500px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none !important;
 }
 
 order_data h2 {
@@ -229,6 +273,7 @@ input[name=consentement_accept] {
 
 @media (min-width:1200px) {
     .container {
-        width: 1522px;
+        /*width: 1522px;*/
+        width: 1170px;
     }
 }
