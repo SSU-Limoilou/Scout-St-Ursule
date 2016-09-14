@@ -134,3 +134,68 @@ input[name=consentement_accept] {
     margin-left: 100px;
     float: right;
 }
+
+/*Section des valeurs */
+
+#valeur {
+    color: white;
+    padding: 0;
+}
+
+#valeur .home-container {
+    background-image: url(http://localhost/wp-scout/wp-content/uploads/2016/09/fond_arbre.png);
+    background-repeat: no-repeat;
+    background-size: 62%;
+    background-position: left -50px;
+    padding-bottom: 50px;
+}
+
+#valeur section {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+#valeur section article {
+    float: left;
+    width: 410px;
+    margin: 0 auto;
+}
+
+#valeur section article:last-child {
+    margin-left: 0;
+}
+
+#valeur h1 {
+    font-family: robotomedium;
+    font-size: 36pt;
+    color: white;
+    margin: 120px 0 30px 0;
+}
+
+#valeur section {
+    margin-top: 125px;
+}
+
+#valeur h2 {
+    font-family: robotoregular;
+    font-size: 19pt;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#valeur p {
+    font-family: robotoregular;
+    font-size: 8pt;
+    color: white;
+}
+
+#valeur hr {
+    color: white;
+    border-top: 2pt solid white;
+    width: 297px;
+    margin-bottom: 40px;
+}
+
+
+@media (min-width:1200px){.container{width: 1522px;}}
