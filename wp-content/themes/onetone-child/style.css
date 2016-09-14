@@ -128,5 +128,9 @@ input[name=consentement_accept] {
     float: left;
 }
 
+/*Inscription Bénévoles*/
 
-
+#benevole .home-section-content img {
+    margin-left: 100px;
+    float: right;
+}
