@@ -19,7 +19,6 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('REVISR_GIT_PATH', ''); // Added by Revisr
 define('DB_NAME', 'wp-scout-bd');
 
 /** Utilisateur de la base de données MySQL. */
