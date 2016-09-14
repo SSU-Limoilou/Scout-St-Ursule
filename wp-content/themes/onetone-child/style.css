@@ -50,15 +50,32 @@ Template: OneTone
     font-style: normal;
 }
 
+#menu-main {
+    font-family: 'robotolight';
+}
+
+#menu-main a:hover {
+    color: #907240;
+}
+
+.site-nav > ul > li > a {
+    font-size: 15pt !important;
+}
+
+.site-nav > ul > li.current > a {
+    color: #907240 !important;
+}
+
 .promo-info {
     padding: 0;
 }
 
 .promo-info h4 {
+    margin: 0;
     padding: 0;
     font-family: 'robotoregular' !important;
-    font-size: 18pt !important;
-    color: white !important;
+    font-size: 18pt;
+    color: white;
     text-align: center;
 }
 
@@ -78,15 +95,32 @@ span .fa-laptop:before {
     display: none !important;
 }
 
+/*
 .magee-heading .heading-inner {
-    margin-top: 450px !important;
+    margin-top: 450px;
+    font-family: 'zemboodregular' !important;
+    font-size: 126pt !important;
+    border-style: none;
+}
+*/
+
+.section-title {
+    margin-top: 550px;
     font-family: 'zemboodregular' !important;
     font-size: 126pt !important;
     border-style: none;
 }
 
-.home-section-content {
-    margin-top: -120px !important;
+.home-section-content p{
+    margin-top: 0 !important;
+    line-height: 0 !important;
     font-family: 'zemboodregular' !important;
     font-size: 95pt !important;
+}
+
+.home-section-content img {
+    margin-top: -775px;
+    padding-bottom: 500px;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none !important;
 }
