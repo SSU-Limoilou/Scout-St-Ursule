@@ -7,23 +7,130 @@ Template: OneTone
 
 /* write custom css */
 
-.promo-info {
-	padding: 0;
+@font-face {
+    font-family: 'zemboodregular';
+    src: url(font/zembood/zembood_shiro_5-webfont.woff2) format('woff2'), url(font/zembood/zembood_shiro_5-webfont.woff) format('woff'), url(font/zembood/zembood_shiro_5-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(font/roboto/roboto-black-webfont.woff2) format('woff2'), url(font/roboto/roboto-black-webfont.woff) format('woff'), url(font/roboto/roboto-black-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(font/roboto/roboto-bold-webfont.woff2) format('woff2'), url(font/roboto/roboto-bold-webfont.woff) format('woff'), url(font/roboto/roboto-bold-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(font/roboto/roboto-light-webfont.woff2) format('woff2'), url(font/roboto/roboto-light-webfont.woff) format('woff'), url(font/roboto/roboto-light-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(font/roboto/roboto-medium-webfont.woff2) format('woff2'), url(font/roboto/roboto-medium-webfont.woff) format('woff'), url(font/roboto/roboto-medium-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(font/roboto/roboto-regular-webfont.woff2) format('woff2'), url(font/roboto/roboto-regular-webfont.woff) format('woff'), url(font/roboto/roboto-regular-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .promo-info h4 {
-	padding: 0;
-	text-align: center;
+    color: red;
 }
 
-.promo-action {
-	display: none;
+#order_data h2 {
+    color: red;
 }
 
-.home-section-content h2 {
-	margin: 20px 0 25px 0;	
+.checkbox input[type=checkbox] {
+    position: static;
 }
 
-span .fa-laptop:before {
-	display:none;
+.woocommerce-checkout .checkout .col-1 .form-row-first {
+    clear: left;
+}
+
+label[for*=consentement_accept] {
+    display: inline !important;
+}
+
+input[name=consentement_accept] {
+    margin: 0 10px;
+}
+
+/* Inscription Scouts et Bénévoles*/
+#inscription, #benevole {
+    padding: 0;
+    height:  890px;
+}
+
+#inscription h1, #benevole h1{
+    font-family: robotoblack;
+    font-size: 70pt;
+    text-transform: uppercase;
+    color: #685d54;
+}
+
+#inscription .home-section-content img, #benevole .home-section-content img {
+    -webkit-opacity: 0.75;
+    -moz-opacity: 0.75;
+    opacity: 0.75;
+    margin-top: 340px;
+}
+
+#inscription div, #benevole div {
+    height: 100%;
+}
+
+.registerButton:link, .registerButton:visited {
+    width: 305px;
+    height: 80px;
+    font-size: 30pt;
+    border: 3pt solid #685d54;
+    color: #685d54;
+    font-family: robotolight;
+    padding: 10px 20px;
+}
+
+.registerButton:hover, .registerButton:active {
+    border: 3pt solid #958579;
+    color: #958579;
+}
+
+
+#inscription h1, #benevole h1 {
+    display: inline-block;
+    margin-top: 150px;
+}
+
+#inscription p, #benevole p {
+    margin: 200px 0 175px 0;
+}
+
+/*Inscription Scouts */
+#inscription .home-section-content img {
+    margin-right: 100px;
+    float: left;
+}
+
+/*Inscription Bénévoles*/
+
+#benevole .home-section-content img {
+    margin-left: 100px;
+    float: right;
 }
